@@ -4,6 +4,7 @@ use App\Http\Controllers\CategoryController;
 use Illuminate\Support\Facades\Route;
   
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductsController;
 use Illuminate\Support\Facades\Auth;
 
 /*
@@ -50,5 +51,10 @@ Category Routes List
 --------------------------------------------
 --------------------------------------------*/
 Route::resource('categories', CategoryController::class);
-// Route::get('categories.index', [CategoryController::class, 'index']);
 
+/*------------------------------------------
+--------------------------------------------
+Product Routes List
+--------------------------------------------
+--------------------------------------------*/
+Route::resource('products', ProductsController::class);
